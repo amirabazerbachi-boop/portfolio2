@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#79334f">
+  <meta name="description" content="Entre em contato com Amira Jamal Bazerbachi.">
+  <title>Contato | Amira Jamal Bazerbachi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../assets/script.js" defer></script>
+</head>
+<body>
+  <canvas class="binary-rain" id="binary-rain" aria-hidden="true"></canvas>
+  <div class="fundo-decorativo" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <div class="grain"></div>
+  </div>
+  <div class="progresso-leitura" id="progresso-leitura" aria-hidden="true"><span></span></div>
+
+  <header class="topo vidro">
+    <a class="logo" href="../index.html" aria-label="Amira Jamal Bazerbachi — início">AJB<span>.</span></a>
+    <button class="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+    <nav class="nav" id="menu-principal" aria-label="Navegação principal">
+      <a href="../index.html#sobre">Sobre Mim</a>
+      <a href="../index.html#timeline">Linha do tempo</a>
+      <a href="../index.html#projetos">Projetos</a>
+      <a href="../index.html#habilidades">Habilidades</a>
+      <a href="contato.html" class="ativo" aria-current="page">Contato</a>
+    </nav>
+  </header>
+
+  <main class="pagina pagina-contato">
+    <div class="contato-cabecalho">
+      <span class="mini-etiqueta">✳ VAMOS CRIAR CONEXÕES</span>
+      <h1>Vamos <span>conversar?</span></h1>
+      <p>Tem uma ideia, quer falar sobre um projeto ou simplesmente trocar experiências sobre tecnologia e design? Escreva para mim por aqui.</p>
+    </div>
+
+    <div class="cols contato-cols">
+      <form class="vidro contato-form" id="form-contato" data-email="amirabazerbachi@gmail.com">
+        <span class="mini-etiqueta">SUA MENSAGEM</span>
+        <h2>Me mande um recado.</h2>
+        <label for="nome">Seu nome</label>
+        <input id="nome" name="nome" autocomplete="name" placeholder="Como posso te chamar?" required>
+
+        <label for="email">Seu e-mail</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+
+        <label for="msg">Mensagem</label>
+        <textarea id="msg" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+
+        <p style="margin-top: 1.2rem"><button class="btn" type="submit">Enviar mensagem <span aria-hidden="true">↗</span></button></p>
+        <p id="status-form" role="status" aria-live="polite" style="margin-top:.8rem"></p>
+        <p class="form-nota">O botão abre o aplicativo de e-mail configurado no seu dispositivo.</p>
+      </form>
+
+      <aside class="vidro contato-info">
+        <span class="mini-etiqueta">OUTRAS FORMAS DE CONTATO</span>
+        <h3>Onde me encontrar</h3>
+        <p>Gosto de conhecer novas ideias e aprender com diferentes perspectivas. Você também pode falar comigo diretamente pelos canais abaixo.</p>
+
+        <div class="contato-detalhe">
+          <span class="contato-detalhe-icone" aria-hidden="true">✉</span>
+          <div>
+            <strong>E-mail</strong>
+            <a href="mailto:amirabazerbachi@gmail.com">amirabazerbachi@gmail.com</a>
+          </div>
+        </div>
+        <div class="contato-detalhe">
+          <span class="contato-detalhe-icone" aria-hidden="true">◷</span>
+          <div>
+            <strong>Tempo de resposta</strong>
+            <small>Até dois dias úteis</small>
+          </div>
+        </div>
+
+        <div class="linha-fina"></div>
+        <span class="mini-etiqueta">ME ACOMPANHE</span>
+        <div class="redes" style="justify-content:flex-start">
+          <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+        <a class="btn sec" href="../index.html">Voltar ao início <span aria-hidden="true">↗</span></a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="rodape vidro">
+    <p>© <span class="ano"></span> Amira Jamal Bazerbachi</p>
+    <p class="rodape-frase">Feito com HTML, CSS e muito café. ✳</p>
+  </footer>
+  <button class="voltar-topo" id="voltar-topo" type="button" aria-label="Voltar ao topo" title="Voltar ao topo">↑</button>
+</body>
+</html>
