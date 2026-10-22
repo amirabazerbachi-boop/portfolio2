@@ -1,0 +1,551 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#79334f">
+  <meta name="description" content="Portfólio pessoal de Amira Jamal Bazerbachi — desenvolvimento web, design e tecnologia.">
+
+  <title>Amira Jamal Bazerbachi | Portfólio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="assets/script.js" defer></script>
+</head>
+
+<body>
+  <canvas class="binary-rain" id="binary-rain" aria-hidden="true"></canvas>
+  <div class="progresso-leitura" id="progresso-leitura" aria-hidden="true"><span></span></div>
+  <div class="fundo-decorativo" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <div class="grain"></div>
+  </div>
+
+  <header class="topo vidro">
+    <a class="logo" href="#inicio">AJB<span>.</span></a>
+
+    <button class="burger" aria-label="Abrir menu"
+      aria-expanded="false" aria-controls="menu-principal">☰</button>
+
+    <nav class="nav" id="menu-principal" aria-label="Navegação principal">
+      <a href="#sobre">Sobre Mim</a>
+      <a href="#timeline">Linha do tempo</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="pages/contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-conteudo">
+        <span class="area"><span class="ponto-pulsante"></span> Desenvolvimento Web · Segundo semestre</span>
+
+        <h1>Amira Jamal <span>Bazerbachi</span></h1>
+
+        <p class="hero-descricao">
+          Tecnologia e design em constante evolução.
+          Um espaço para registrar minhas atividades, projetos, habilidades
+          e tudo o que estou construindo ao longo da minha jornada no Curso Técnico de Desenvolvimento de Sistemas do SENAI Morvan Figueiredo.
+        </p>
+
+        <div class="hero-acoes">
+          <a class="btn" href="#timeline">Explorar minha jornada <span>↗</span></a>
+          <a class="btn sec" href="#projetos">Ver projetos</a>
+        </div>
+
+        <div class="hero-assinatura">
+          <span class="assinatura-simbolo" aria-hidden="true">✳</span>
+          <span>FEITO POR MIM</span>
+          <span class="assinatura-linha" aria-hidden="true"></span>
+          <span class="assinatura-extra">ESTÉTICA · CÓDIGO · CRIATIVIDADE</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="anel anel-externo"></div>
+        <div class="anel anel-interno"></div>
+
+        <div class="avatar-box vidro">
+          <span class="etiqueta-foto">MEU DIÁRIO DO CURSO</span>
+          <img
+            src="images/419838_feaffbd6cebf0344d98623c62d8ff4df-17_06_2026, 13_50_51.jpg"
+            alt="Retrato de Amira Jamal Bazerbachi">
+          <span class="foto-legenda">Amira Jamal Bazerbachi · 2026</span>
+        </div>
+
+        <div class="selo-flutuante selo-topo">✳ DESIGN</div>
+        <div class="selo-flutuante selo-base">DEV ↗</div>
+      </div>
+    </section>
+
+    <section id="sobre" class="secao">
+      <div class="secao-cabecalho">
+        <span class="numero-secao">01 / CONHEÇA-ME</span>
+        <h2>Por trás da <span>aluna.</span></h2>
+        <p>Um pouco de quem sou, do que me inspira e de onde quero chegar.</p>
+      </div>
+
+      <div class="sobre">
+        <article class="vidro sobre-texto">
+          <span class="mini-etiqueta">OLÁ, MUNDO!</span>
+
+          <p>
+            Meu nome é Amira Jamal Bazerbachi, tenho 17 anos e estou cursando
+            o segundo ano do ensino médio. Faço curso técnico de Desenvolvimento
+            de Sistemas no SENAI Morvan Figueiredo, onde estou no primeiro ano
+            de aprendizado. Meu principal objetivo é trabalhar no mundo da moda,
+            mas, desde que entrei no universo da tecnologia, percebi que seria
+            incrível expandir minhas perspectivas nessa área.
+          </p>
+
+          <p>
+            Como profissional, ainda estou descobrindo meu caminho. Quero
+            transformar o que venho aprendendo em experiências práticas,
+            especialmente na criação de sites e no design. Já desenvolvi
+            capacidades para estruturar páginas com HTML e CSS e tenho
+            interesse em UX/UI, unindo criatividade e estratégia.
+          </p>
+
+          <p>
+            O design é uma das áreas que mais me interessam. Gosto de projetos
+            criativos, coloridos e cheios de personalidade, mas também adoro
+            explorar estéticas diferentes. Cada atividade é uma oportunidade
+            de desenvolver meu olhar visual, minha comunicação e minha
+            capacidade de trabalhar em equipe. E essa jornada está apenas
+            começando. Xoxo.
+          </p>
+        </article>
+
+        <aside class="vidro sobre-lateral">
+          <span class="mini-etiqueta">MEU MOMENTO ATUAL</span>
+          <h3>Foco atual</h3>
+
+          <ul class="chips">
+            <li>JavaScript</li>
+            <li>Variaveis</li>
+            <li>Operadores</li>
+            <li>Arrays e Objetos</li>
+            <li>Variaveis</li>
+            <li>Frameworks Front-end e Bootstrap</li>
+          </ul>
+
+          <div class="linha-fina"></div>
+
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- LINHA DO TEMPO COM 18 CARDS GERADOS PELO JAVASCRIPT -->
+    <section id="timeline" class="secao secao-timeline">
+      <div class="secao-cabecalho">
+        <span class="numero-secao">02 / MEU PROCESSO</span>
+        <h2>Linha do tempo de atividades e<span> projetos.</span></h2>
+        <p>
+          Abaixo todas as atividades, slides, designs e outros projetos que fiz durante o semestre. Cada card é uma memória que registra o que aprendi e como evoluí.
+        </p>
+      </div>
+
+      <div class="timeline-legenda">
+        <span><i class="legenda-ponto"></i> MINHA TRAJETÓRIA</span>
+        <span class="contador-timeline"><strong id="contador-cards">18</strong> MEMÓRIAS</span>
+      </div>
+
+      <div class="timeline" id="timeline-cards">
+        <button type="button" class="evento vidro visivel" aria-haspopup="dialog" aria-label="Abrir memória: Slides de apresentação" data-data="3 de fevereiro 2026" data-titulo="Slides de apresentação" data-descricao="Essa foi a primeira atividade que fiz no SENAI. No primeiro dia de aula, criei slides e contei um pouco sobre mim. Além disso, também fizemos pesquisas sobre o que é TI e Inteligencia Artificial e colocamos na apresentação." data-aprendizado="Aprendi mais funcionalidades do Canva e adquiri conhecimentos que não tinha sobre TI e Inteligencia artficial." data-imagens="images/Captura de tela 2026-10-22 093740.png|images/Captura de tela 2026-10-22 093800.png|images/Captura de tela 2026-10-22 093809.png|images/Captura de tela 2026-10-22 093819.png">
+          <div class="evento-capa">
+            <img src="images/atv1.png" alt="Meu primeiro contato com HTML" loading="lazy" decoding="async">
+            <span class="evento-numero">01 / 18</span>
+            <span class="evento-abrir">↗</span>
+          </div>
+          <div class="evento-corpo">
+            <span class="evento-data">3 de fevereiro 2026</span>
+            <h3>Slides de apresentação</h3>
+            <p class="evento-legenda">Slides de apresentação sobre mim no primeiro dia de curso no SENAI.</p>
+            <div class="evento-rodape"><span>MEMÓRIA DO SEMESTRE</span><span>EXPLORAR ↗</span></div>
+          </div>
+        </button>
+        <button type="button" class="evento vidro visivel" aria-haspopup="dialog" aria-label="Abrir memória: Montagem de computador" data-data="10 de fevereiro 2026" data-titulo="Montagem de computador" data-descricao="Aprendi sobre os componentes internos de um computador, como a placa-mãe, processador, memória RAM e disco rígido. No trabalho nós também pesquisamos e selecionamos peças mais adequadas para diferentes exigencias, por exemplo, para jogos ou para trabalho." data-aprendizado="Componentes internos de um computador, montagem e configuração." data-imagens="images/Captura de tela 2026-10-20 102145.png|images/Captura de tela 2026-10-20 102155.png|images/Captura de tela 2026-10-20 102205.png|images/Captura de tela 2026-10-20 102215.png">
+          <div class="evento-capa">
+            <img src="images/Captura de tela 2026-10-20 102145.png" alt="Montagem de computador" loading="lazy" decoding="async">
+            <span class="evento-numero">02 / 18</span>
+            <span class="evento-abrir">↗</span>
+          </div>
+          <div class="evento-corpo">
+            <span class="evento-data">10 de fevereiro 2026</span>
+            <h3>Montagem de computador - Slides</h3>
+            <p class="evento-legenda">Slides feitos em grupo. Primeiro conteúdo que aprendemos, as peças de computador.</p>
+            <div class="evento-rodape"><span>MEMÓRIA DO SEMESTRE</span><span>EXPLORAR ↗</span></div>
+          </div>
+        </button>
+        <button type="button" class="evento vidro visivel" aria-haspopup="dialog" aria-label="Abrir memória: Formatando um Pc" data-data="3 de março de 2026" data-titulo="Formatando um Pc" data-legenda="Formatação e configuração de um computador." data-descricao="Aprendi sobre a formatação de um computador através do pendrive e aplicamos os conhecimentos em uma apresentação." data-aprendizado="Formatação de sistema operacional, backup de dados e configurações iniciais." data-imagens="images/Captura de tela 2026-10-22 101932.png|images/Captura de tela 2026-10-22 102016.png|images/Captura de tela 2026-10-22 102034.png|images/Captura de tela 2026-10-22 102050.png">
+          <div class="evento-capa">
+            <img src="images/Captura de tela 2026-10-20 103230.png" alt="formatando um pc" loading="lazy" decoding="async">
+            <span class="evento-numero">03 / 18</span>
+            <span class="evento-abrir">↗</span>
+          </div>
+          <div class="evento-corpo">
+            <span class="evento-data">3 de março de 2026</span>
+            <h3>Formatando um Pc - Slides</h3>
+            <p class="evento-legenda">Aqui aprendi sobre a formatação de um computador através do pendrive e aplicamos os conhecimentos em uma apresentação.</p>
+            <div class="evento-rodape"><span>MEMÓRIA DO SEMESTRE</span><span>EXPLORAR ↗</span></div>
+          </div>
+        </button>
+        <button type="button" class="evento vidro visivel" aria-haspopup="dialog" aria-label="Abrir memória: Quiz de S. Operacionais" data-data="5 de março de 2026"  data-legenda="Quiz sobre sistemas operacionais." data-descricao="Realizei um quiz sobre sistemas operacionais usando o OBS e Blooket com outro grupo de colegas, fizemos uma gameplay." data-aprendizado="Conhecimentos sobre diferentes sistemas operacionais, suas características e novas ferramentas." data-imagens="images/Captura de tela 2026-10-22 102512.png">
+          <div class="evento-capa">
+            <img src="images/Captura de tela 2026-10-20 104058.png" alt="Quiz de S. Operacionais" loading="lazy" decoding="async">
+            <span class="evento-numero">04 / 18</span>
+            <span class="evento-abrir">↗</span>
+          </div>
+          <div class="evento-corpo">
+            <span class="evento-data">5 de março de 2026</span>
+            <h3>Quiz de S. Operacionais</h3>
+            <p class="evento-legenda">Primeiro video feito. Quiz de sistemas operacionais usando o OBS e Blooket.</p>
+            <div class="evento-rodape"><span>MEMÓRIA DO SEMESTRE</span><span>EXPLORAR ↗</span></div>
+          </div>
+        </button>
+        <button type="button" class="evento vidro visivel" aria-haspopup="dialog" aria-label="Abrir memória: Kanban" data-data="12 de março de 2026" data-titulo="Kanban" data-legenda="Método de organização de tarefas." data-descricao="Aprendi sobre o método Kanban e como utilizá-lo para organizar e visualizar o fluxo de trabalho." data-aprendizado="Planejamento, organização e melhoria contínua." data-imagens="images/Captura de tela 2026-10-22 102823.png|images/Captura de tela 2026-10-22 102837.png|images/Captura de tela 2026-10-22 102846.png">
+          <div class="evento-capa">
+            <img src="images/Captura de tela 2026-10-20 104703.png" alt="Kanban" loading="lazy" decoding="async">
+            <span class="evento-numero">05 / 18</span>
+            <span class="evento-abrir">↗</span>
+          </div>
+          <div class="evento-corpo">
+            <span class="evento-data">12 de março de 2026</span>
+            <h3>Kanban - Slide</h3>
+            <p class="evento-legenda">Apresentação sobre o método Kanban utilizado para organizar tarefas.</p>
+            <div class="evento-rodape"><span>MEMÓRIA DO SEMESTRE</span><span>EXPLORAR ↗</span></div>
+          </div>
+        </button>
+        <button type="button" class="evento vidro visivel" aria-haspopup="dialog" aria-label="Abrir memória: Scrum e outras metodologias" data-data="12 de março de 2026" data-titulo="Scrum e outras metodologias" data-legenda="Pesquisa avançada e apresentação sobre scrum e metodologias agéis." data-descricao="Aprendi sobre o método Scrum e outras metodologias ágeis, compreendendo suas práticas e benefícios." data-aprendizado="Planejamento, execução e revisão em ciclos curtos." data-imagens="images/Captura de tela 2026-10-22 103048.png|images/Captura de tela 2026-10-22 103102.png|images/Captura de tela 2026-10-22 103316.png|images/Captura de tela 2026-10-22 103337.png">
+          <div class="evento-capa">
+            <img src="images/Captura de tela 2026-10-20 105927.png" alt="Scrum e outras metodologias" loading="lazy" decoding="async">
+            <span class="evento-numero">06 / 18</span>
+            <span class="evento-abrir">↗</span>
+          </div>
+          <div class="evento-corpo">
+            <span class="evento-data">12 de março de 2026</span>
+            <h3>Scrum e outras metodologias</h3>
+            <p class="evento-legenda">Pesquisa avançada e apresentação sobre scrum e metodologias agéis.</p>
+            <div class="evento-rodape"><span>MEMÓRIA DO SEMESTRE</span><span>EXPLORAR ↗</span></div>
+          </div>
+        </button>
+        <button type="button" class="evento vidro visivel" aria-haspopup="dialog" aria-label="Abrir memória: Pesquisa Tipografia" data-data="24 de março de 2026" data-titulo="Pesquisa Tipografia" data-legenda="Estudo sobre diferentes estilos tipográficos." data-descricao="Nesse trabalho selecionamos tres diferentes sites de restaurantes de mesma culinaria e julgamos a tipografia e escolhemos o nosso favorito, apresentando e justificando as nossas analises." data-aprendizado="Seleção de fontes e hierarquia tipográfica." data-imagens="images/Captura de tela 2026-10-22 103536.png|images/Captura de tela 2026-10-22 103547.png|images/Captura de tela 2026-10-22 103601.png|images/Captura de tela 2026-10-22 103609.png">
+          <div class="evento-capa">
+            <img src="images/Captura de tela 2026-10-20 112313.png" alt="Imagens e identidade visual" loading="lazy" decoding="async">
+            <span class="evento-numero">07 / 18</span>
+            <span class="evento-abrir">↗</span>
+          </div>
+          <div class="evento-corpo">
+            <span class="evento-data">24 de março de 2026</span>
+            <h3>Pesquisa Tipografia - Slides</h3>
+            <p class="evento-legenda">Primeiro contato aprofundado com tipografia. Pesquisa em grupo de diferentes sites.</p>
+            <div class="evento-rodape"><span>MEMÓRIA DO SEMESTRE</span><span>EXPLORAR ↗</span></div>
+          </div>
+        </button>
+        <button type="button" class="evento vidro visivel" aria-haspopup="dialog" aria-label="Abrir memória: Primeiros passos com Git" data-data="Abril · Semana 01" data-titulo="Primeiros passos com Git" data-legenda="Registrando a evolução do meu código." data-descricao="Conheci o controle de versão e sua importância para acompanhar alterações e manter um histórico dos projetos." data-aprendizado="Repositórios, commits e histórico de alterações." data-imagens="">
+          <div class="evento-capa">
+            <img src="images/Captura de tela 2026-10-20 112929.png" alt="Primeiros passos com Git" loading="lazy" decoding="async">
+            <span class="evento-numero">08 / 18</span>
+            <span class="evento-abrir">↗</span>
+          </div>
+          <div class="evento-corpo">
+            <span class="evento-data">26 de março de 2026</span>
+            <h3>Banner filme "Fallen"</h3>
+            <p class="evento-legenda">Recriação de banner profissional para estudo de design.</p>
+            <div class="evento-rodape"><span>MEMÓRIA DO SEMESTRE</span><span>EXPLORAR ↗</span></div>
+          </div>
+        </button>
+        <button type="button" class="evento vidro visivel" aria-haspopup="dialog" aria-label="Abrir memória: Explorando o GitHub" data-data="Abril · Semana 02" data-titulo="Explorando o GitHub" data-legenda="Um espaço para organizar e compartilhar projetos." data-descricao="Explorei o GitHub para armazenar repositórios, compartilhar código e acompanhar o desenvolvimento dos projetos." data-aprendizado="Repositórios remotos e sincronização de arquivos." data-imagens="images/projeto-4-1.png|images/projeto-4-2.png|images/projeto-4-3.png|images/projeto-4-4.png|images/projeto-4-5.png|images/projeto-4-6.png|images/projeto-4-7.png|images/projeto-4-8.png|images/projeto-4-9.png">
+          <div class="evento-capa">
+            <img src="images/Captura de tela 2026-10-20 114102.png" alt="Explorando o GitHub" loading="lazy" decoding="async">
+            <span class="evento-numero">09 / 18</span>
+            <span class="evento-abrir">↗</span>
+          </div>
+          <div class="evento-corpo">
+            <span class="evento-data">25 de Abril de 2026</span>
+            <h3>Protótipo do Spotify</h3>
+            <p class="evento-legenda">Criação do layout exato do Spotify no Figma para estudo.</p>
+            <div class="evento-rodape"><span>MEMÓRIA DO SEMESTRE</span><span>EXPLORAR ↗</span></div>
+          </div>
+        </button>
+        <button type="button" class="evento vidro visivel" aria-haspopup="dialog" aria-label="Abrir memória: Publicando projetos" data-data="Abril · Semana 03" data-titulo="Publicando projetos" data-legenda="Levando minhas ideias para a internet." data-descricao="Conheci o processo de publicação de páginas e a organização necessária para disponibilizar um site." data-aprendizado="Organização de arquivos e hospedagem web." data-imagens="images/Captura de tela 2026-10-22 104150.png|images/Captura de tela 2026-10-22 104200.png|images/Captura de tela 2026-10-22 104210.png|images/Captura de tela 2026-10-22 104220.png">
+          <div class="evento-capa">
+            <img src="images/Captura de tela 2026-10-20 130433.png" alt="Publicando projetos" loading="lazy" decoding="async">
+            <span class="evento-numero">10 / 18</span>
+            <span class="evento-abrir">↗</span>
+          </div>
+          <div class="evento-corpo">
+            <span class="evento-data">5 de Maio de 2026</span>
+            <h3>Trabalho colaborativo</h3>
+            <p class="evento-legenda">Explicação de projeto feito em grupo, idealização e desenvolvimento de app.</p>
+            <div class="evento-rodape"><span>MEMÓRIA DO SEMESTRE</span><span>EXPLORAR ↗</span></div>
+          </div>
+        </button>
+        <button type="button" class="evento vidro visivel" aria-haspopup="dialog" aria-label="Abrir memória: Experiência do usuário" data-data="Abril · Semana 04" data-titulo="Experiência do usuário" data-legenda="Criar também é pensar em quem vai utilizar." data-descricao="Passei a considerar como as pessoas navegam pelas interfaces e como a clareza e a facilidade de uso influenciam essa experiência." data-aprendizado="Fundamentos de UX/UI e usabilidade." data-imagens="images/projeto-2-1.png|images/projeto-2-2.png|images/projeto-2-3.png|images/projeto-2-4.png|images/projeto-2-5.png|images/projeto-2-6.png">
+          <div class="evento-capa">
+            <img src="images/Captura de tela 2026-10-20 130957.png" alt="Experiência do usuário" loading="lazy" decoding="async">
+            <span class="evento-numero">11 / 18</span>
+            <span class="evento-abrir">↗</span>
+          </div>
+          <div class="evento-corpo">
+            <span class="evento-data">7 de Maio de 2026</span>
+            <h3>App ficticio criado no Figma</h3>
+            <p class="evento-legenda">Protótipo de aplicativo feito para um cliente ficticio no Figma.</p>
+            <div class="evento-rodape"><span>MEMÓRIA DO SEMESTRE</span><span>EXPLORAR ↗</span></div>
+          </div>
+        </button>
+        <button type="button" class="evento vidro visivel" aria-haspopup="dialog" aria-label="Abrir memória: Design responsivo" data-data="Maio · Semana 01" data-titulo="Design responsivo" data-legenda="Uma experiência em diferentes telas." data-descricao="Explorei maneiras de adaptar páginas para celulares, tablets e computadores, mantendo a navegação consistente." data-aprendizado="Media queries e dimensões flexíveis." data-imagens="images/projeto-3-1.png|images/projeto-3-2.png|images/projeto-3-3.png|images/projeto-3-4.png|images/projeto-3-5.png|images/projeto-3-6.png">
+          <div class="evento-capa">
+            <img src="images/Captura de tela 2026-10-20 131221.png" alt="Design responsivo" loading="lazy" decoding="async">
+            <span class="evento-numero">12 / 18</span>
+            <span class="evento-abrir">↗</span>
+          </div>
+          <div class="evento-corpo">
+            <span class="evento-data">14 de Maio de 2026</span>
+            <h3>Protótipo do app Moovit</h3>
+            <p class="evento-legenda">Recriação do aplicativo Moovit no Figma.</p>
+            <div class="evento-rodape"><span>MEMÓRIA DO SEMESTRE</span><span>EXPLORAR ↗</span></div>
+          </div>
+        </button>
+        <button type="button" class="evento vidro visivel" aria-haspopup="dialog" aria-label="Abrir memória: Componentes visuais" data-data="Maio · Semana 02" data-titulo="Componentes visuais" data-legenda="Pequenos elementos formam uma experiência." data-descricao="Observei como botões, menus e cards compartilham padrões visuais para tornar uma interface consistente." data-aprendizado="Padrões de interface e consistência visual." data-imagens="images/Captura de tela 2026-10-22 105158.png|images/Captura de tela 2026-10-22 105207.png|images/Captura de tela 2026-10-22 105213.png|images/Captura de tela 2026-10-22 105221.png">
+          <div class="evento-capa">
+            <img src="images/Captura de tela 2026-10-20 131341.png" alt="Componentes visuais" loading="lazy" decoding="async">
+            <span class="evento-numero">13 / 18</span>
+            <span class="evento-abrir">↗</span>
+          </div>
+          <div class="evento-corpo">
+            <span class="evento-data">19 de Maio de 2026</span>
+            <h3>Análise de apps</h3>
+            <p class="evento-legenda">Nesse slide fazemos uma analise de apps com design e funcionalidades ruins.</p>
+            <div class="evento-rodape"><span>MEMÓRIA DO SEMESTRE</span><span>EXPLORAR ↗</span></div>
+          </div>
+        </button>
+        <button type="button" class="evento vidro visivel" aria-haspopup="dialog" aria-label="Abrir memória: Conhecendo o Bootstrap" data-data="Maio · Semana 03" data-titulo="Conhecendo o Bootstrap" data-legenda="Agilidade e criatividade no desenvolvimento." data-descricao="Explorei um framework com componentes e ferramentas que facilitam a criação de interfaces responsivas." data-aprendizado="Classes utilitárias e componentes responsivos." data-imagens="">
+          <div class="evento-capa">
+            <img src="images/Captura de tela 2026-10-20 131452.png" alt="Conhecendo o Bootstrap" loading="lazy" decoding="async">
+            <span class="evento-numero">14 / 18</span>
+            <span class="evento-abrir">↗</span>
+          </div>
+          <div class="evento-corpo">
+            <span class="evento-data">21 de Maio de 2026</span>
+            <h3>Desenvolvimento web de sistema solar</h3>
+            <p class="evento-legenda">Primeira aplicação de site com flex-box.</p>
+            <div class="evento-rodape"><span>MEMÓRIA DO SEMESTRE</span><span>EXPLORAR ↗</span></div>
+          </div>
+        </button>
+        <button type="button" class="evento vidro visivel" aria-haspopup="dialog" aria-label="Abrir memória: Animações e microinterações" data-data="Junho · Semana 01" data-titulo="Animações e microinterações" data-legenda="Movimento que acrescenta personalidade." data-descricao="Explorei transições e efeitos visuais para tornar as interfaces mais dinâmicas e envolventes." data-aprendizado="Transições, animações CSS e feedback visual." data-imagens="images/Captura de tela 2026-10-22 105400.png|images/Captura de tela 2026-10-22 105410.png|images/Captura de tela 2026-10-22 105419.png|images/Captura de tela 2026-10-22 105429.png">
+          <div class="evento-capa">
+            <img src="images/Captura de tela 2026-10-20 131616.png" alt="Animações e microinterações" loading="lazy" decoding="async">
+            <span class="evento-numero">15 / 18</span>
+            <span class="evento-abrir">↗</span>
+          </div>
+          <div class="evento-corpo">
+            <span class="evento-data">21 de Maio de 2026</span>
+            <h3>Flex-box</h3>
+            <p class="evento-legenda">Slide explicando para a turma o Flex-box e como aplicar na criação de um sistema solar.</p>
+            <div class="evento-rodape"><span>MEMÓRIA DO SEMESTRE</span><span>EXPLORAR ↗</span></div>
+          </div>
+        </button>
+        <button type="button" class="evento vidro visivel" aria-haspopup="dialog" aria-label="Abrir memória: Trabalho em equipe" data-data="Junho · Semana 02" data-titulo="Trabalho em equipe" data-legenda="Compartilhar ideias também faz parte de criar." data-descricao="As atividades em grupo proporcionaram oportunidades para praticar comunicação, escuta e colaboração." data-aprendizado="Comunicação e organização coletiva." data-imagens="images/projeto-2-13.png|images/projeto-2-12.png|images/projeto-2-11.png|images/projeto-2-10.png|images/projeto-2-9.png|images/projeto-2-8.png|images/projeto-2-7.png">
+          <div class="evento-capa">
+            <img src="images/Captura de tela 2026-10-20 131754.png" alt="Trabalho em equipe" loading="lazy" decoding="async">
+            <span class="evento-numero">16 / 18</span>
+            <span class="evento-abrir">↗</span>
+          </div>
+          <div class="evento-corpo">
+            <span class="evento-data">4 de Junho de 2026</span>
+            <h3>Fashion Ledger</h3>
+            <p class="evento-legenda">Prototipação de site de noticias de moda, para posteriormente ser um site.</p>
+            <div class="evento-rodape"><span>MEMÓRIA DO SEMESTRE</span><span>EXPLORAR ↗</span></div>
+          </div>
+        </button>
+        <button type="button" class="evento vidro visivel" aria-haspopup="dialog" aria-label="Abrir memória: Conectando conhecimentos" data-data="Junho · Semana 03" data-titulo="Conectando conhecimentos" data-legenda="Unindo técnica e visão criativa." data-descricao="Comecei a reunir conhecimentos técnicos e escolhas visuais em projetos mais completos." data-aprendizado="Planejamento e integração de conhecimentos." data-imagens="images/Captura de tela 2026-10-22 111611.png|images/Captura de tela 2026-10-22 111621.png|images/Captura de tela 2026-10-22 111632.png|images/Captura de tela 2026-10-22 111650.png">
+          <div class="evento-capa">
+            <img src="images/Captura de tela 2026-10-20 131915.png" alt="Conectando conhecimentos" loading="lazy" decoding="async">
+            <span class="evento-numero">17 / 18</span>
+            <span class="evento-abrir">↗</span>
+          </div>
+          <div class="evento-corpo">
+            <span class="evento-data">9 de Junho de 2026</span>
+            <h3>Explicação sobre o scrum e Git hub</h3>
+            <p class="evento-legenda">Slides apresentando a organização do grupo e conceitos pedidos pelo professor.</p>
+            <div class="evento-rodape"><span>MEMÓRIA DO SEMESTRE</span><span>EXPLORAR ↗</span></div>
+          </div>
+        </button>
+        <button type="button" class="evento vidro visivel" aria-haspopup="dialog" aria-label="Abrir memória: Meu portfólio, minha jornada" data-data="Julho · Encerramento" data-titulo="Meu portfólio, minha jornada" data-legenda="Um registro do que construí e do que ainda vem." data-descricao="Este portfólio reúne minha trajetória de aprendizado e representa uma oportunidade de refletir sobre minha evolução, meus interesses e os próximos passos." data-aprendizado="Organização de projetos e apresentação profissional." data-imagens="images/Captura de tela 2026-10-22 111949.png|images/Captura de tela 2026-10-22 112010.png|images/Captura de tela 2026-10-22 112018.png|images/Captura de tela 2026-10-22 112031.png|images/Captura de tela 2026-10-22 112112.png">
+          <div class="evento-capa">
+            <img src="images/Captura de tela 2026-10-20 132013.png" alt="Meu portfólio, minha jornada" loading="lazy" decoding="async">
+            <span class="evento-numero">18 / 18</span>
+            <span class="evento-abrir">↗</span>
+          </div>
+          <div class="evento-corpo">
+            <span class="evento-data">16 de Junho de 2026</span>
+            <h3>Encerramento do semestre</h3>
+            <p class="evento-legenda">Slides feitos para encerrar o semestre, falando de experiencias e trabalhos.</p>
+            <div class="evento-rodape"><span>MEMÓRIA DO SEMESTRE</span><span>EXPLORAR ↗</span></div>
+          </div>
+        </button>
+      </div>
+
+      <p class="timeline-final">
+        <span>✳</span> A jornada continua. Este é apenas o começo.
+      </p>
+    </section>
+
+    <section id="projetos" class="secao">
+      <div class="secao-cabecalho">
+        <span class="numero-secao">03 / PORTFÓLIO</span>
+        <h2>Ideias que ganharam <span>forma.</span></h2>
+        <p>Projetos, experimentos e experiências que mostram minha evolução.</p>
+      </div>
+
+      <div class="galeria">
+        <article class="vidro card">
+          <img src="images/Captura de tela 2026-10-20 132941.png" alt="Projeto Garage 911" loading="lazy">
+          <div class="card-conteudo">
+            <span class="mini-etiqueta">01 / Garage 911</span>
+            <h3>Sistema de estacionamento</h3>
+            <p>Site de sistema de controle de entrada e saida de veiculos.</p>
+            <div class="tec"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+        </article>
+
+        <article class="vidro card">
+          <img src="images/Captura de tela 2026-07-28 142633.png" alt="Projeto Agenda Escolar" loading="lazy">
+          <div class="card-conteudo">
+            <span class="mini-etiqueta">02 / Lendo a sua mente</span>
+            <h3>Jogo do Número Mágico</h3>
+            <p>Aplicação interativa para adivinhar um número entre 1 e 63.</p>
+            <div class="tec"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+        </article>
+
+        <article class="vidro card">
+          <img src="images/Captura de tela 2026-10-20 133316.png" alt="Projeto Landing Page" loading="lazy">
+          <div class="card-conteudo">
+            <span class="mini-etiqueta">03 / XOXO.Fashion.Girl </span>
+            <h3>Site com bootstrap</h3>
+            <p>Site desenvolvido com o framework Bootstrap. Site de noticias, tendências, desfiles e closet virtual interativo.</p>
+            <div class="tec"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+        </article>
+
+        <article class="vidro card">
+          <img src="images/Captura de tela 2026-10-20 133447.png" alt="Projeto Blog Pessoal" loading="lazy">
+          <div class="card-conteudo">
+            <span class="mini-etiqueta">04 / Guia de boas práticas</span>
+            <h3>Landing Page</h3>
+            <p>Guia de boas práticas no ambiente de trabalho/escolar no SENAI.</p>
+            <div class="tec"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="habilidades" class="secao">
+      <div class="secao-cabecalho">
+        <span class="numero-secao">04 / EVOLUÇÃO</span>
+        <h2>Habilidades em <span>construção.</span></h2>
+        <p>Competências que venho desenvolvendo durante o curso.</p>
+      </div>
+
+      <div class="habs">
+        <div class="hab vidro">
+          <header><span>HTML</span><span>85%</span></header>
+          <div class="trilho"><div class="barra" style="--n:85%"></div></div>
+        </div>
+
+        <div class="hab vidro">
+          <header><span>CSS</span><span>80%</span></header>
+          <div class="trilho"><div class="barra" style="--n:80%"></div></div>
+        </div>
+
+        <div class="hab vidro">
+          <header><span>Git/GitHub</span><span>70%</span></header>
+          <div class="trilho"><div class="barra" style="--n:70%"></div></div>
+        </div>
+
+        <div class="hab vidro">
+          <header><span>UX/UI</span><span>65%</span></header>
+          <div class="trilho"><div class="barra" style="--n:65%"></div></div>
+        </div>
+
+        <div class="hab vidro">
+          <header><span>Trabalho em equipe</span><span>90%</span></header>
+          <div class="trilho"><div class="barra" style="--n:90%"></div></div>
+        </div>
+
+        <div class="hab vidro">
+          <header><span>Comunicação</span><span>85%</span></header>
+          <div class="trilho"><div class="barra" style="--n:85%"></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="vidro rodape">
+    <a class="logo" href="#inicio">AJB<span>.</span></a>
+
+
+    <div class="redes">
+      <a href="https://github.com/amirabazerbachi-boop" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/amira-bazerbachi-05704242b" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      <a href="pages/contato.html">Contato ↗</a>
+    </div>
+
+    <p class="copyright">© <span class="ano"></span> Amira Jamal Bazerbachi · Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- JANELA DE EXPANSÃO DOS CARDS. Para adicionar imagens a um card,
+       coloque data-imagens="images/projeto-1.png|images/projeto-2.png" no botão .evento.
+       Use caminhos relativos ao index.html e separe as imagens com |. -->
+  <div class="modal-overlay" id="modal-timeline"
+       aria-hidden="true" role="presentation">
+
+    <article class="modal-card vidro"
+             role="dialog"
+             aria-modal="true"
+             aria-labelledby="modal-titulo"
+             aria-describedby="modal-descricao"
+             tabindex="-1">
+
+      <button class="modal-fechar" type="button"
+              aria-label="Fechar detalhes">×</button>
+
+      <div class="modal-imagem-wrap" aria-label="Carrossel de imagens deste projeto">
+        <img id="modal-imagem" src="" alt="Imagem do projeto">
+        <button class="carrossel-controle carrossel-anterior" id="carrossel-anterior" type="button" aria-label="Imagem anterior">‹</button>
+        <button class="carrossel-controle carrossel-proximo" id="carrossel-proximo" type="button" aria-label="Próxima imagem">›</button>
+        <span class="modal-selo">GALERIA DO PROJETO</span>
+        <span class="modal-numero" id="modal-numero">01 / 18</span>
+      </div>
+      <div class="carrossel-rodape">
+        <span id="carrossel-contador">01 / 01</span>
+        <div class="carrossel-pontos" id="carrossel-pontos" aria-label="Selecionar imagem"></div>
+      </div>
+
+      <div class="modal-conteudo">
+        <span class="modal-data" id="modal-data"></span>
+        <h2 id="modal-titulo"></h2>
+        <p class="modal-legenda" id="modal-legenda"></p>
+        <div class="modal-divisor"></div>
+        <h3 class="modal-subtitulo">Sobre este projeto</h3>
+        <p class="modal-descricao" id="modal-descricao"></p>
+        <div class="modal-aprendizado">
+          <span>✳ O QUE LEVO DESSA EXPERIÊNCIA</span>
+          <p id="modal-aprendizado-texto"></p>
+        </div>
+</div>
+    </article>
+  </div>
+  <button class="voltar-topo" id="voltar-topo" type="button" aria-label="Voltar ao topo" title="Voltar ao topo">↑</button>
+</body>
+</html>
